@@ -1,0 +1,189 @@
+/* @theme academic */
+
+@import 'gaia';
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+
+
+:root {
+  --color-background: #fff;
+  --color-foreground: #333;
+  --color-highlight: #800000;
+}
+
+section {
+  background-image: none;
+  font-family: 'Noto Sans JP', sans-serif;
+  padding-top: 90px;
+  padding-left: 40px;
+  padding-right: 40px;
+  font-size: 20px /* 전체 섹션의 폰트 사이즈*/
+}
+
+
+/* https://github.com/marp-team/marpit/issues/271 */
+section::after {
+  font-weight: 700;
+  content: attr(data-marpit-pagination) '/' attr(data-marpit-pagination-total);
+}
+
+ul ul {
+  font-size: 0.9em;
+}
+
+section.chapter {
+  color: var(--color-highlight);
+  display: flex;
+  text-align: center;
+  align-items: center;
+  vertical-align: middle;
+  background-image: none !important;
+  justify-content: center;
+}
+section.chapter h1{
+  font-size: 60px; 
+}
+section.chapter h2{
+  font-size: 55px; 
+}
+section.chapter h3{
+  font-size: 50px; 
+}
+
+/* lead */
+section.lead {
+  content: none;
+}
+section.lead h1 {
+  color: #800000;
+  font-size: 70px; 
+  text-align: left;
+}
+section.lead h1 strong {
+  -webkit-text-stroke: 1px #800000;
+  font-size: 70px; 
+}
+section.lead h2 {
+  color: #800000;
+  font-size: 70px; 
+  text-align: left;
+}
+section.lead h2 strong {
+  -webkit-text-stroke: 1px #800000;
+  font-size: 70px; 
+}
+section.lead h3 {
+  color: #800000;
+  text-align: left;
+  font-size: 40px; 
+}
+section.lead h3 strong {
+  -webkit-text-stroke: 1px #800000;
+  font-size: 40px; 
+}
+section.lead h4 {
+  color: #800000;
+  text-align: left;
+  font-size: 30px; 
+}
+section.lead h4 strong {
+  -webkit-text-stroke: 1px #800000;
+  font-size: 30px; 
+}
+section.lead h5 {
+  color: #800000;
+  text-align: left;
+  font-size: 30px; 
+}
+section.lead h5 strong {
+  -webkit-text-stroke: 1px #800000;
+  font-size: 30px; 
+}
+section.lead p {
+  text-align: right;
+  font-size: 25px; 
+}
+
+
+
+/* header */
+header {
+  background-color: #800000;
+  color: #fff;
+  font-size: 1.4em;
+  font-weight: 700;
+}
+
+/* table */
+table {margin-left: auto;margin-right: auto;table-layout: fixed;display:table;}
+
+blockquote {
+  max-width: 90%;
+  border-top: 0.1em dashed #555;
+  font-size: 60%;
+  position: absolute;
+  bottom: 20px;
+}
+blockquote::before {
+  content: "";
+}
+blockquote::after {
+  content: "";
+}
+
+
+img[alt~="center"] {
+  display: block;
+  margin: 0 auto;
+}
+
+
+code {
+  font-family: 'Source Code Pro', monospace;
+}
+
+
+/*
+div.twocols {
+  margin-top: 35px;
+  column-count: 2;
+}
+div.twocols p:first-child,
+div.twocols h1:first-child,
+div.twocols h2:first-child,
+div.twocols ul:first-child,
+div.twocols ul li:first-child,
+div.twocols ul li p:first-child {
+  margin-top: 0 !important;
+}
+div.twocols p.break {
+  break-before: column;
+  margin-top: 0;
+}
+*/
+
+
+div.columns {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+div.columns3 {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+div.columns4 {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+section.hidden {
+  display: none;
+}
+
+
+
