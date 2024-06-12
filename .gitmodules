@@ -1,0 +1,3 @@
+[submodule "theme/markdown-it-biblatex"]
+	path = theme/markdown-it-biblatex
+	url = git@github.com:ParkDongho/markdown-it-biblatex.git

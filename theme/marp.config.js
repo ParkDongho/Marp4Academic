@@ -3,7 +3,7 @@ const marpHideSlidesPlugin = require('./hide-slides-plugin')
 const markdownItContainer = require('markdown-it-container')
 const markdownItTableOfContents = require('markdown-it-table-of-contents')
 const markdownIt = require('markdown-it');
-const mdBiblatex = require('@arothuis/markdown-it-biblatex');
+const mdBiblatex = require('./markdown-it-biblatex/src/index.js');
 
 
 module.exports = {
@@ -19,7 +19,6 @@ module.exports = {
       }
     }
   })
-
   .use(markdownItContainer, 'columns3', {
     render: function (tokens, idx) {
       if (tokens[idx].nesting === 1) {
@@ -29,7 +28,6 @@ module.exports = {
       }
     }
   })
-
   .use(markdownItContainer, 'columns4', {
     render: function (tokens, idx) {
       if (tokens[idx].nesting === 1) {
@@ -39,6 +37,7 @@ module.exports = {
       }
     }
   })
+
   .use(markdownItContainer, 'split', {
     render: function (tokens, idx) {
       if (tokens[idx].nesting === 1) {
@@ -63,6 +62,7 @@ module.exports = {
     stylePath: __dirname + "/csl/styles/apa-numeric-superscript-brackets.csl",
     linkToBibliography: true,
   })
+
 
 }
 

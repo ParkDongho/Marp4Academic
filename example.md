@@ -133,7 +133,10 @@ Swetlla-2015 [@Swetllla-2015]
 
 [@Cohen-1963]
 
+
 Eyeriss [@eyeriss]
+
+Eyeriss v2 [@eyeriss-v2]
 
 ---
 <!-- _class: chapter -->
