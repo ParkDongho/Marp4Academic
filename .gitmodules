@@ -1,3 +1,9 @@
 [submodule "theme/markdown-it-biblatex"]
 	path = theme/markdown-it-biblatex
 	url = git@github.com:ParkDongho/markdown-it-biblatex.git
+[submodule "theme/csl/locales"]
+	path = theme/csl/locales
+	url = https://github.com/citation-style-language/locales
+[submodule "theme/csl/styles"]
+	path = theme/csl/styles
+	url = https://github.com/citation-style-language/styles
