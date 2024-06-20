@@ -41,27 +41,152 @@
 }
 
 
-@ARTICLE{eyeriss-v2,
-  author={Chen, Yu-Hsin and Yang, Tien-Ju and Emer, Joel and Sze, Vivienne},
-  journal={IEEE Journal on Emerging and Selected Topics in Circuits and Systems}, 
-  title={Eyeriss v2: A Flexible Accelerator for Emerging Deep Neural Networks on Mobile Devices}, 
-  year={2019},
-  volume={9},
-  number={2},
-  pages={292-308},
-  keywords={Hardware;Shape;Arrays;Parallel processing;Mobile handsets;Bandwidth;Deep neural network accelerators;deep learning;energy-efficient accelerators;dataflow processing;spatial architecture},
-  doi={10.1109/JETCAS.2019.2910232}
+DianNao
+@inproceedings{diannao,
+  author = {Chen, Tianshi and Du, Zidong and Sun, Ninghui and Wang, Jia and Wu, Chengyong and Chen, Yunji and Temam, Olivier},
+  title = {DianNao: a small-footprint high-throughput accelerator for ubiquitous machine-learning},
+  year = {2014},
+  isbn = {9781450323055},
+  publisher = {Association for Computing Machinery},
+  address = {New York, NY, USA},
+  url = {https://doi.org/10.1145/2541940.2541967},
+  doi = {10.1145/2541940.2541967},
+  abstract = {Machine-Learning tasks are becoming pervasive in a broad range of domains, and in a broad range of systems (from embedded systems to data centers). At the same time, a small set of machine-learning algorithms (especially Convolutional and Deep Neural Networks, i.e., CNNs and DNNs) are proving to be state-of-the-art across many applications. As architectures evolve towards heterogeneous multi-cores composed of a mix of cores and accelerators, a machine-learning accelerator can achieve the rare combination of efficiency (due to the small number of target algorithms) and broad application scope.Until now, most machine-learning accelerator designs have focused on efficiently implementing the computational part of the algorithms. However, recent state-of-the-art CNNs and DNNs are characterized by their large size. In this study, we design an accelerator for large-scale CNNs and DNNs, with a special emphasis on the impact of memory on accelerator design, performance and energy.We show that it is possible to design an accelerator with a high throughput, capable of performing 452 GOP/s (key NN operations such as synaptic weight multiplications and neurons outputs additions) in a small footprint of 3.02 mm2 and 485 mW; compared to a 128-bit 2GHz SIMD processor, the accelerator is 117.87x faster, and it can reduce the total energy by 21.08x. The accelerator characteristics are obtained after layout at 65 nm. Such a high throughput in a small footprint can open up the usage of state-of-the-art machine-learning algorithms in a broad set of systems and for a broad set of applications.},
+  booktitle = {Proceedings of the 19th International Conference on Architectural Support for Programming Languages and Operating Systems},
+  pages = {269–284},
+  numpages = {16},
+  keywords = {neural networks, memory, accelerator},
+  location = {Salt Lake City, Utah, USA},
+  series = {ASPLOS '14},
 }
 
-@ARTICLE{eyeriss,
+@INPROCEEDINGS{dadiannao,
+  author={Chen, Yunji and Luo, Tao and Liu, Shaoli and Zhang, Shijin and He, Liqiang and Wang, Jia and Li, Ling and Chen, Tianshi and Xu, Zhiwei and Sun, Ninghui and Temam, Olivier},
+  booktitle={2014 47th Annual IEEE/ACM International Symposium on Microarchitecture}, 
+  title={DaDianNao: A Machine-Learning Supercomputer}, 
+  year={2014},
+  volume={},
+  number={},
+  pages={609-622},
+  abstract={Many companies are deploying services, either for consumers or industry, which are largely based on machine-learning algorithms for sophisticated processing of large amounts of data. The state-of-the-art and most popular such machine-learning algorithms are Convolutional and Deep Neural Networks (CNNs and DNNs), which are known to be both computationally and memory intensive. A number of neural network accelerators have been recently proposed which can offer high computational capacity/area ratio, but which remain hampered by memory accesses. However, unlike the memory wall faced by processors on general-purpose workloads, the CNNs and DNNs memory footprint, while large, is not beyond the capability of the on chip storage of a multi-chip system. This property, combined with the CNN/DNN algorithmic characteristics, can lead to high internal bandwidth and low external communications, which can in turn enable high-degree parallelism at a reasonable area cost. In this article, we introduce a custom multi-chip machine-learning architecture along those lines. We show that, on a subset of the largest known neural network layers, it is possible to achieve a speedup of 450.65x over a GPU, and reduce the energy by 150.31x on average for a 64-chip system. We implement the node down to the place and route at 28nm, containing a combination of custom storage and computational units, with industry-grade interconnects.},
+  keywords={Computer architecture;Graphics processing units;Biological neural networks;Neurons;Kernel;Hardware;Bandwidth;machine learning;accelerator;neural network;computer architecture},
+  doi={10.1109/MICRO.2014.58},
+  ISSN={2379-3155},
+  month={Dec},
+  site = {/2014/12/13/ieee-7011421/},
+}
+
+@INPROCEEDINGS{shidiannao,
+  author={Du, Zidong and Fasthuber, Robert and Chen, Tianshi and Ienne, Paolo and Li, Ling and Luo, Tao and Feng, Xiaobing and Chen, Yunji and Temam, Olivier},
+  booktitle={2015 ACM/IEEE 42nd Annual International Symposium on Computer Architecture (ISCA)}, 
+  title={ShiDianNao: Shifting vision processing closer to the sensor}, 
+  year={2015},
+  volume={},
+  number={},
+  pages={92-104},
+  abstract={In recent years, neural network accelerators have been shown to achieve both high energy efficiency and high performance for a broad application scope within the important category of recognition and mining applications. Still, both the energy efficiency and peiformance of such accelerators remain limited by memory accesses. In this paper, we focus on image applications, arguably the most important category among recognition and mining applications. The neural networks which are state-of-the-art for these applications are Convolutional Neural Networks (CNN), and they have an important property: weights are shared among many neurons, considerably reducing the neural network memory footprint. This property allows to entirely map a CNN within an SRAM, eliminating all DRAM accesses for weights. By further hoisting this accelerator next to the image sensor, it is possible to eliminate all remaining DRAM accesses, i.e., for inputs and outputs. In this paper, we propose such a CNN accelerator, placed next to a CMOS or CCD sensor. The absence of DRAM accesses combined with a careful exploitation of the specific data access patterns within CNNs allows us to design an accelerator which is 60x more energy efficient than the previous state-of-the-art neural network accelerator. We present a fult design down to the layout at 65 nm, with a modest footprint of 4.86 mm2 and consuming only 320 mW, but still about 30x faster than high-end GPUs.},
+  keywords={Kernel;Neural networks;Sensors;Energy efficiency;Smart phones;Filtering;Neurons},
+  doi={10.1145/2749469.2750389},
+  ISSN={1063-6897},
+  month={June},
+}
+
+
+
+
+---
+Eyeriss
+@INPROCEEDINGS{eyeriss_isscc,
+  author={Chen, Yu-Hsin and Krishna, Tushar and Emer, Joel and Sze, Vivienne},
+  booktitle={2016 IEEE International Solid-State Circuits Conference (ISSCC)}, 
+  title={An energy-efficient reconfigurable accelerator for deep convolutional neural networks}, 
+  year={2016},
+  volume={},
+  number={},
+  pages={262-263},
+  keywords={Shape;Random access memory;Arrays;Clocks;Logic arrays;Memory management;Bandwidth},
+  doi={10.1109/ISSCC.2016.7418007}
+}
+@ARTICLE{eyeriss_jscc,
   author={Chen, Yu-Hsin and Krishna, Tushar and Emer, Joel S. and Sze, Vivienne},
   journal={IEEE Journal of Solid-State Circuits}, 
-  title={Eyeriss: An Energy-Efficient Reconfigurable Accelerator for Deep Convolutional Neural Networks}, 
+  title={An Energy-Efficient Reconfigurable Accelerator for Deep Convolutional Neural Networks}, 
   year={2017},
   volume={52},
   number={1},
   pages={127-138},
+  abstract={Eyeriss is an accelerator for state-of-the-art deep convolutional neural networks (CNNs). It optimizes for the energy efficiency of the entire system, including the accelerator chip and off-chip DRAM, for various CNN shapes by reconfiguring the architecture. CNNs are widely used in modern AI systems but also bring challenges on throughput and energy efficiency to the underlying hardware. This is because its computation requires a large amount of data, creating significant data movement from on-chip and off-chip that is more energy-consuming than computation. Minimizing data movement energy cost for any CNN shape, therefore, is the key to high throughput and energy efficiency. Eyeriss achieves these goals by using a proposed processing dataflow, called row stationary (RS), on a spatial architecture with 168 processing elements. RS dataflow reconfigures the computation mapping of a given shape, which optimizes energy efficiency by maximally reusing data locally to reduce expensive data movement, such as DRAM accesses. Compression and data gating are also applied to further improve energy efficiency. Eyeriss processes the convolutional layers at 35 frames/s and 0.0029 DRAM access/multiply and accumulation (MAC) for AlexNet at 278 mW (batch size N = 4), and 0.7 frames/s and 0.0035 DRAM access/MAC for VGG-16 at 236 mW (N = 3).},
   keywords={Shape;Random access memory;Computer architecture;Throughput;Clocks;Neural networks;Hardware;Convolutional neural networks (CNNs);dataflow processing;deep learning;energy-efficient accelerators;spatial architecture},
-  doi={10.1109/JSSC.2016.2616357}
+  doi={10.1109/JSSC.2016.2616357},
+  ISSN={1558-173X},
+  month={Jan},
+  site={/2016/11/08/ieee-7738524/},
+}
+
+
+TPU
+@INPROCEEDINGS{tpu,
+  author={Jouppi, Norman P. and Young, Cliff and Patil, Nishant and Patterson, David and Agrawal, Gaurav and Bajwa, Raminder and Bates, Sarah and Bhatia, Suresh and Boden, Nan and Borchers, Al and Boyle, Rick and Cantin, Pierre-luc and Chao, Clifford and Clark, Chris and Coriell, Jeremy and Daley, Mike and Dau, Matt and Dean, Jeffrey and Gelb, Ben and Ghaemmaghami, Tara Vazir and Gottipati, Rajendra and Gulland, William and Hagmann, Robert and Ho, C. Richard and Hogberg, Doug and Hu, John and Hundt, Robert and Hurt, Dan and Ibarz, Julian and Jaffey, Aaron and Jaworski, Alek and Kaplan, Alexander and Khaitan, Harshit and Killebrew, Daniel and Koch, Andy and Kumar, Naveen and Lacy, Steve and Laudon, James and Law, James and Le, Diemthu and Leary, Chris and Liu, Zhuyuan and Lucke, Kyle and Lundin, Alan and MacKean, Gordon and Maggiore, Adriana and Mahony, Maire and Miller, Kieran and Nagarajan, Rahul and Narayanaswami, Ravi and Ni, Ray and Nix, Kathy and Norrie, Thomas and Omernick, Mark and Penukonda, Narayana and Phelps, Andy and Ross, Jonathan and Ross, Matt and Salek, Amir and Samadiani, Emad and Severn, Chris and Sizikov, Gregory and Snelham, Matthew and Souter, Jed and Steinberg, Dan and Swing, Andy and Tan, Mercedes and Thorson, Gregory and Tian, Bo and Toma, Horia and Tuttle, Erick and Vasudevan, Vijay and Walter, Richard and Wang, Walter and Wilcox, Eric and Yoon, Doe Hyun},
+  booktitle={2017 ACM/IEEE 44th Annual International Symposium on Computer Architecture (ISCA)}, 
+  title={In-datacenter performance analysis of a tensor processing unit}, 
+  year={2017},
+  volume={},
+  number={},
+  pages={1-12},
+  abstract={Many architects believe that major improvements in cost-energy-performance must now come from domain-specific hardware. This paper evaluates a custom ASIC-called a Tensor Processing Unit (TPU)-deployed in datacenters since 2015 that accelerates the inference phase of neural networks (NN). The heart of the TPU is a 65,536 8-bit MAC matrix multiply unit that offers a peak throughput of 92 TeraOps/second (TOPS) and a large (28 MiB) software-managed on-chip memory. The TPU's deterministic execution model is a better match to the 99th-percentile response-time requirement of our NN applications than are the time-varying optimizations of CPUs and GPUs that help average throughput more than guaranteed latency. The lack of such features helps explain why, despite having myriad MACs and a big memory, the TPU is relatively small and low power. We compare the TPU to a server-class Intel Haswell CPU and an Nvidia K80 GPU, which are contemporaries deployed in the same datacenters. Our workload, written in the high-level TensorFlow framework, uses production NN applications (MLPs, CNNs, and LSTMs) that represent 95% of our datacenters' NN inference demand. Despite low utilization for some applications, the TPU is on average about 15X–30X faster than its contemporary GPU or CPU, with TOPS/Watt about 30X–80X higher. Moreover, using the GPU's GDDR5 memory in the TPU would triple achieved TOPS and raise TOPS/Watt to nearly 70X the GPU and 200X the CPU.},
+  keywords={Transmission line matrix methods;Graphics processing units;Artificial neural networks;Central Processing Unit;Tensile stress;Training;Hardware;DNN;MLP;CNN;RNN;LSTM;neural network;deep learning;domain-specific architecture;accelerator;TensorFlow;TPU;GPU},
+  doi={10.1145/3079856.3080246},
+  ISSN={},
+  month={June},
+}
+
+SIMBA
+@inproceedings{simba_micro,
+  author = {Shao, Yakun Sophia and Clemons, Jason and Venkatesan, Rangharajan and Zimmer, Brian and Fojtik, Matthew and Jiang, Nan and Keller, Ben and Klinefelter, Alicia and Pinckney, Nathaniel and Raina, Priyanka and Tell, Stephen G. and Zhang, Yanqing and Dally, William J. and Emer, Joel and Gray, C. Thomas and Khailany, Brucek and Keckler, Stephen W.},
+  title = {Scaling Deep-Learning Inference with Multi-Chip-Module-Based Architecture},
+  year = {2019},
+  isbn = {9781450369381},
+  publisher = {Association for Computing Machinery},
+  address = {New York, NY, USA},
+  url = {https://doi.org/10.1145/3352460.3358302},
+  doi = {10.1145/3352460.3358302},
+  abstract = {Package-level integration using multi-chip-modules (MCMs) is a promising approach for building large-scale systems. Compared to a large monolithic die, an MCM combines many smaller chiplets into a larger system, substantially reducing fabrication and design costs. Current MCMs typically only contain a handful of coarse-grained large chiplets due to the high area, performance, and energy overheads associated with inter-chiplet communication. This work investigates and quantifies the costs and benefits of using MCMs with fine-grained chiplets for deep learning inference, an application area with large compute and on-chip storage requirements. To evaluate the approach, we architected, implemented, fabricated, and tested Simba, a 36-chiplet prototype MCM system for deep-learning inference. Each chiplet achieves 4 TOPS peak performance, and the 36-chiplet MCM package achieves up to 128 TOPS and up to 6.1 TOPS/W. The MCM is configurable to support a flexible mapping of DNN layers to the distributed compute and storage units. To mitigate inter-chiplet communication overheads, we introduce three tiling optimizations that improve data locality. These optimizations achieve up to 16\% speedup compared to the baseline layer mapping. Our evaluation shows that Simba can process 1988 images/s running ResNet-50 with batch size of one, delivering inference latency of 0.50 ms.},
+  booktitle = {Proceedings of the 52nd Annual IEEE/ACM International Symposium on Microarchitecture},
+  pages = {14–27},
+  numpages = {14},
+  keywords = {Multi-chip module, accelerator architecture, neural networks},
+  location = {Columbus, OH, USA},
+  series = {MICRO '52}
+}
+
+@INPROCEEDINGS{simba_vlsi,
+  author={Zimmer, Brian and Venkatesan, Rangharajan and Shao, Yakun Sophia and Clemons, Jason and Fojtik, Matthew and Jiang, Nan and Keller, Ben and Klinefelter, Alicia and Pinckney, Nathaniel and Raina, Priyanka and Tell, Stephen G. and Zhang, Yanqing and Dally, William J. and Emer, Joel S. and Gray, C. Thomas and Keckler, Stephen W. and Khailany, Brucek},
+  booktitle={2019 Symposium on VLSI Circuits}, 
+  title={A 0.11 pJ/Op, 0.32-128 TOPS, Scalable Multi-Chip-Module-based Deep Neural Network Accelerator with Ground-Reference Signaling in 16nm}, 
+  year={2019},
+  volume={},
+  number={},
+  pages={C300-C301},
+  abstract={This work presents a scalable deep neural network (DNN) accelerator consisting of 36 chips connected in a mesh network on a multi-chip-module (MCM) using ground-referenced signaling (GRS). While previous accelerators fabricated on a single monolithic die are limited to specific network sizes, the proposed architecture enables flexible scaling for efficient inference on a wide range of DNNs, from mobile to data center domains. The 16nm prototype achieves 1.29 TOPS/mm2, 0.11 pJ/op energy efficiency, 4.01 TOPS peak performance for a 1chip system, and 127.8 peak TOPS and 2615 images/s ResNet50 inference for a 36-chip system.},
+  keywords={Transceivers;Random access memory;Energy efficiency;Neural networks;Bandwidth;Semiconductor device measurement;Weight measurement},
+  doi={10.23919/VLSIC.2019.8778056},
+  ISSN={2158-5636},
+  month={June},
+}
+
+@ARTICLE{simba_jscc,
+  author={Zimmer, Brian and Venkatesan, Rangharajan and Shao, Yakun Sophia and Clemons, Jason and Fojtik, Matthew and Jiang, Nan and Keller, Ben and Klinefelter, Alicia and Pinckney, Nathaniel and Raina, Priyanka and Tell, Stephen G. and Zhang, Yanqing and Dally, William J. and Emer, Joel S. and Gray, C. Thomas and Keckler, Stephen W. and Khailany, Brucek},
+  journal={IEEE Journal of Solid-State Circuits}, 
+  title={A 0.32–128 TOPS, Scalable Multi-Chip-Module-Based Deep Neural Network Inference Accelerator With Ground-Referenced Signaling in 16 nm}, 
+  year={2020},
+  volume={55},
+  number={4},
+  pages={920-932},
+  abstract={Custom accelerators improve the energy efficiency, area efficiency, and performance of deep neural network (DNN) inference. This article presents a scalable DNN accelerator consisting of 36 chips connected in a mesh network on a multi-chip-module (MCM) using ground-referenced signaling (GRS). While previous accelerators fabricated on a single monolithic chip are optimal for specific network sizes, the proposed architecture enables flexible scaling for efficient inference on a wide range of DNNs, from mobile to data center domains. Communication energy is minimized with large on-chip distributed weight storage and a hierarchical network-on-chip and network-on-package, and inference energy is minimized through extensive data reuse. The 16-nm prototype achieves 1.29-TOPS/mm2 area efficiency, 0.11 pJ/op (9.5 TOPS/W) energy efficiency, 4.01-TOPS peak performance for a one-chip system, and 127.8 peak TOPS and 1903 images/s ResNet-50 batch-1 inference for a 36-chip system.},
+  keywords={Tensors;Neural networks;Computer architecture;System-on-chip;Prototypes;Convolution;Bandwidth;Deep neural networks (DNNs);ground-referenced signaling (GRS);inference accelerator;multi-chip modules;single-ended signaling},
+  doi={10.1109/JSSC.2019.2960488},
+  ISSN={1558-173X},
+  month={April},
+  site={/2016/01/31/ieee-8959403/},
 }
 

@@ -89,54 +89,21 @@ hello world
 
 # **4. BibTex Support**
 
----
-<!-- _header: bibtex Example -->
-
-A bibliography [@Cohen-1963] is only produced for the items cited [@Susskind-Hrabovsky-2014].
-
-[@Cohen-1963{see}]
-
----
-<!-- _header: bibtex Type -->
-
-### Regular
-
-A regular citation: [@Cohen-1963]
-
-### Author only
-
-A citation with the author only: [!@Cohen-1963]
-
-### Suppress author
-
-A citation with the author suppressed: [-@Cohen-1963]
-
-### Composite
-
-A composite citation: [~@Cohen-1963]
-
 
 ---
 <!-- _header: Anchor Tag -->
 
-A bibliography [@Cohen-1963] is only produced for the items cited [@Susskind-Hrabovsky-2014].
-
 For multiple items in a citation, only the first is linked
 
-Swetlla-2015 [@Swetllla-2015]
 
-[@Swetla-2015]
+- Diannao [@diannao]
 
-[@Swetllla-2015]
+- DaDiannao [@dadiannao]
 
-[@Swetll2la-2015]
+- ShiDiannao [@shidiannao]
 
-[@Cohen-1963]
+- Eyeriss [@eyeriss_isscc], [@eyeriss_jscc]
 
-
-Eyeriss [@eyeriss]
-
-Eyeriss v2 [@eyeriss-v2]
 
 ---
 <!-- _class: chapter -->
@@ -148,7 +115,5 @@ Eyeriss v2 [@eyeriss-v2]
 <!-- _header: Bibliography -->
 
 [bibliography]
-
-
 
 

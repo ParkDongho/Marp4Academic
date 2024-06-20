@@ -59,7 +59,9 @@ module.exports = {
     bibPath: '../bib/reference.bib',
     bibliographyTitle: '',
     localePath: __dirname + "/csl/locales/locales-en-US.xml",
-    stylePath: __dirname + "/csl/styles/apa-numeric-superscript-brackets.csl",
+    //stylePath: __dirname + "/csl/styles/apa-numeric-superscript-brackets.csl",
+    bibliographyEntryWrapper: "p",
+    wrapBibliography: false,
     linkToBibliography: true,
   })
 
