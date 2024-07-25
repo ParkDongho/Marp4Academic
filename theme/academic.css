@@ -20,7 +20,6 @@ section {
   font-size: 20px /* 전체 섹션의 폰트 사이즈*/
 }
 
-
 /* https://github.com/marp-team/marpit/issues/271 */
 section::after {
   font-weight: 700;
@@ -30,6 +29,7 @@ section::after {
 ul ul {
   font-size: 0.9em;
 }
+
 
 section.chapter {
   color: var(--color-highlight);
@@ -49,6 +49,7 @@ section.chapter h2{
 section.chapter h3{
   font-size: 50px; 
 }
+
 
 /* lead */
 section.lead {
@@ -180,6 +181,7 @@ div.columns4 {
   grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 1rem;
 }
+
 
 section.hidden {
   display: none;
