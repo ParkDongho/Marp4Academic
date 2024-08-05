@@ -12,69 +12,69 @@ const path = require('path');
 module.exports = {
   preprocessor: path.resolve(__dirname, './marp-multi-col.js'),
   engine: ({ marp }) => marp
-  .use(marpKrokiPlugin)
+    .use(marpKrokiPlugin)
 
-  .use(markdownItContainer, 'start-multi-column', {
-    render: function (tokens, idx) {
-      if (tokens[idx].nesting === 1) {
-        return '<div class="columns"><div>\n';
-      } else {
-        return '</div></div>\n';
+    .use(markdownItContainer, 'start-multi-column', {
+      render: function(tokens, idx) {
+        if (tokens[idx].nesting === 1) {
+          return '<div class="columns"><div>\n';
+        } else {
+          return '</div></div>\n';
+        }
       }
-    }
-  })
+    })
 
-  .use(markdownItContainer, 'columns3', {
-    render: function (tokens, idx) {
-      if (tokens[idx].nesting === 1) {
-        return '<div class="columns3"><div>\n';
-      } else {
-        return '</div></div>\n';
+    .use(markdownItContainer, 'columns3', {
+      render: function(tokens, idx) {
+        if (tokens[idx].nesting === 1) {
+          return '<div class="columns3"><div>\n';
+        } else {
+          return '</div></div>\n';
+        }
       }
-    }
-  })
-  .use(markdownItContainer, 'columns4', {
-    render: function (tokens, idx) {
-      if (tokens[idx].nesting === 1) {
-        return '<div class="columns4"><div>\n';
-      } else {
-        return '</div></div>\n';
+    })
+    .use(markdownItContainer, 'columns4', {
+      render: function(tokens, idx) {
+        if (tokens[idx].nesting === 1) {
+          return '<div class="columns4"><div>\n';
+        } else {
+          return '</div></div>\n';
+        }
       }
-    }
-  })
+    })
 
-  .use(markdownItContainer, 'end-column', {
-    render: function (tokens, idx) {
-      if (tokens[idx].nesting === 1) {
-        return '</div><div>\n';
-      } else {
-        return '</div></div>\n';
+    .use(markdownItContainer, 'end-column', {
+      render: function(tokens, idx) {
+        if (tokens[idx].nesting === 1) {
+          return '</div><div>\n';
+        } else {
+          return '</div></div>\n';
+        }
       }
-    }
-  })
+    })
 
 
-  // markdown-it (toc)
-  .use(markdownItTableOfContents, {
-    "includeLevel": [1]
-  })
+    // markdown-it (toc)
+    .use(markdownItTableOfContents, {
+      "includeLevel": [1, 2]
+    })
 
- // .use(markdownItTocDoneRight, {
+    // .use(markdownItTocDoneRight, {
 
- // })
+    // })
 
-  .use(marpHideSlidesPlugin)
+    .use(marpHideSlidesPlugin)
 
-  // // markdown-it (biblatex)
-  // .use(mdBiblatex, {
-  //   bibPath: '../bib/references.bib',
-  //   bibliographyTitle: '',
-  //   localePath: __dirname + "/csl/locales/locales-en-US.xml",
-  //   //stylePath: __dirname + "/csl/styles/apa-numeric-superscript-brackets.csl",
-  //   bibliographyEntryWrapper: "p",
-  //   wrapBibliography: false,
-  //   linkToBibliography: true,
-  // })
+    // markdown-it (biblatex)
+    .use(mdBiblatex, {
+      bibPath: '../bib/references.bib',
+      bibliographyTitle: '',
+      localePath: __dirname + "/csl/locales/locales-en-US.xml",
+      //stylePath: __dirname + "/csl/styles/apa-numeric-superscript-brackets.csl",
+      bibliographyEntryWrapper: "p",
+      wrapBibliography: false,
+      linkToBibliography: true,
+    })
 
 
 }

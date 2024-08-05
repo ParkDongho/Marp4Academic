@@ -9,14 +9,14 @@ class MultiColumnPreprocessor:
 
         for line in lines:
             if re.match(r'^--- start-multi-column$', line.strip()):
-                new_lines.append('<div class="columns"><div class="column">')
+                new_lines.append('<div class="columns"><div class="column">\n')
                 in_multi_column = True
                 continue
             elif re.match(r'^--- end-column ---$', line.strip()):
-                new_lines.append('</div><div class="column">')
+                new_lines.append('</div><div class="column">\n')
                 continue
             elif re.match(r'^--- end-multi-column$', line.strip()):
-                new_lines.append('</div></div>')
+                new_lines.append('</div></div>\n')
                 in_multi_column = False
                 continue
 

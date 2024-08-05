@@ -8,13 +8,11 @@
 :root {
   --color-background: #fff;
   --color-foreground: #333;
-  --color-highlight: #800000;
-}
-
+  --color-highlight: #800000; }
 section {
   background-image: none;
   font-family: 'Noto Sans JP', sans-serif;
-  padding-top: 90px;
+  padding-top: 40px;
   padding-left: 40px;
   padding-right: 40px;
   font-size: 20px /* 전체 섹션의 폰트 사이즈*/
@@ -65,18 +63,23 @@ section.lead h1 strong {
   font-size: 70px; 
 }
 section.lead h2 {
+  background-color: #FFFFFF;
   color: #800000;
   font-size: 70px; 
   text-align: left;
+  padding-top:    0px;
+  padding-bottom: 0px;
+  padding-left:   0px;
+  padding-right:  0px;
 }
 section.lead h2 strong {
   -webkit-text-stroke: 1px #800000;
   font-size: 70px; 
 }
 section.lead h3 {
-  color: #800000;
+  color: #FFF;
   text-align: left;
-  font-size: 40px; 
+  font-size: 60px; 
 }
 section.lead h3 strong {
   -webkit-text-stroke: 1px #800000;
@@ -106,13 +109,34 @@ section.lead p {
 }
 
 
+h2 {
+  background-color: #800000;
+  color: #FFFFFF;
+  padding-top:    10px;
+  padding-bottom: 10px;
+  padding-left:   10px;
+  padding-right:  10px;
+}
+
+h3 {
+  background-color: #800000;
+  color: #FFFFFF;
+  padding-top:    10px;
+  padding-bottom: 10px;
+  padding-left:   10px;
+  padding-right:  10px;
+}
+
 
 /* header */
 header {
-  background-color: #800000;
-  color: #fff;
-  font-size: 1.4em;
-  font-weight: 700;
+  /* background-color: #800000; */
+  text-align: right;
+  padding-top:    0px;
+  padding-left: 40px;
+  padding-right: 40px;
+  color:          #000;
+  font-size:      0.6em;
 }
 
 /* table */
