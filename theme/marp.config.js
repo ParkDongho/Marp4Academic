@@ -65,16 +65,16 @@ module.exports = {
 
     .use(marpHideSlidesPlugin)
 
-    // markdown-it (biblatex)
-    .use(mdBiblatex, {
-      bibPath: '../bib/references.bib',
-      bibliographyTitle: '',
-      localePath: __dirname + "/csl/locales/locales-en-US.xml",
-      //stylePath: __dirname + "/csl/styles/apa-numeric-superscript-brackets.csl",
-      bibliographyEntryWrapper: "p",
-      wrapBibliography: false,
-      linkToBibliography: true,
-    })
+  // markdown-it (biblatex)
+  // .use(mdBiblatex, {
+  //   bibPath: '../bib/references.bib',
+  //   bibliographyTitle: '',
+  //   localePath: __dirname + "/csl/locales/locales-en-US.xml",
+  //   //stylePath: __dirname + "/csl/styles/apa-numeric-superscript-brackets.csl",
+  //   bibliographyEntryWrapper: "p",
+  //   wrapBibliography: false,
+  //   linkToBibliography: true,
+  // })
 
 
 }
