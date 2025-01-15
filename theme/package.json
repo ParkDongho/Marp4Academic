@@ -8,6 +8,7 @@
     "markdown-it-anchor": "^9.0.1",
     "markdown-it-container": "^3.0.0",
     "markdown-it-table-of-contents": "^0.6.0",
-    "markdown-it-toc-done-right": "^4.2.0"
+    "markdown-it-toc-done-right": "^4.2.0",
+    "markdown-it-mark": "^4.0.0"
   }
 }

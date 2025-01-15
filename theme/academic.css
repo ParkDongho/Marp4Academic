@@ -127,6 +127,28 @@ h3 {
   padding-right:  10px;
 }
 
+h2 a {
+  color: #FFFFFF;
+  padding-top:    10px;
+  padding-bottom: 10px;
+  padding-left:   10px;
+  padding-right:  10px;
+}
+
+h3 a {
+  color: #FFFFFF;
+  padding-top:    10px;
+  padding-bottom: 10px;
+  padding-left:   10px;
+  padding-right:  10px;
+}
+
+mark {
+  color: #FFFFFF;
+  background-color: #808080;
+}
+
+
 
 /* header */
 header {

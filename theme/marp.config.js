@@ -3,6 +3,7 @@ const marpHideSlidesPlugin = require('./hide-slides-plugin')
 const markdownItContainer = require('markdown-it-container')
 const markdownItAnchor = require('markdown-it-anchor').default
 const markdownItTableOfContents = require('markdown-it-table-of-contents')
+const markdownItMark = require('markdown-it-mark')
 //const markdownItTocDoneRight = require('markdown-it-toc-done-right')
 const markdownIt = require('markdown-it');
 const mdBiblatex = require('./markdown-it-biblatex/src/index.js');
@@ -56,14 +57,10 @@ module.exports = {
 
     // markdown-it (toc)
     .use(markdownItTableOfContents, {
-      "includeLevel": [1, 2]
+      "includeLevel": [2, 2]
     })
-
-    // .use(markdownItTocDoneRight, {
-
-    // })
-
     .use(marpHideSlidesPlugin)
+    .use(markdownItMark)
 
   // markdown-it (biblatex)
   // .use(mdBiblatex, {
